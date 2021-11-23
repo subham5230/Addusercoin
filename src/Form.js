@@ -102,7 +102,9 @@ export default function Form() {
 
     const handleFormSubmit = event => {
         event.preventDefault();
-        axios.get("https://coinstronaut-admin.herokuapp.com/coins?page=1&sort=recent", ).then(
+        axios.post("https://coinstronaut-admin.herokuapp.com/create-or-update-coin", {
+            coin: state
+        }).then(
           (res) => console.log(res)
         )
     };
