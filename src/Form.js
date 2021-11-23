@@ -193,7 +193,7 @@ export default function Form() {
                     <TextField
                         id="network"
                         select
-                        label="Native select"
+                        label="Network/Chain"
                         value={state.network}
                         onChange={dispatcher("network")}
                         SelectProps={{
