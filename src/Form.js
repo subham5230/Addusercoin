@@ -10,55 +10,59 @@ import RichText from "./RichText";
 
 const currencies = [
     {
-        value: 'Binance Smart Chain (BSC)',
+        value: 'NONE',
+        label: 'None', 
+    },
+    {
+        value: 'BSC',
         label: 'Binance Smart Chain (BSC)',
     },
     {
-        value: 'Ethereum Smart Chain (ETH)',
+        value: 'ETH',
         label: 'Ethereum Smart Chain (ETH)',
     },
     {
-        value: 'Polygon Smart Chain (MATIC)',
+        value: 'MATIC',
         label: 'Polygon Smart Chain (MATIC)',
     },
     {
-        value: 'Solana Smart Chain (SOL)',
+        value: 'SOL',
         label: 'Solana Smart Chain (SOL)',
     },
     {
-        value: 'Enjin Smart Chain (ENJ)',
+        value: 'ENJ',
         label: 'Enjin Smart Chain (ENJ)',
     },
     {
-        value: 'EOS Smart Chain (EOS)',
+        value: 'EOS',
         label: 'EOS Smart Chain (EOS)',
     },
     {
-        value: 'Ontology Smart Chain (ONT)',
+        value: 'ONT',
         label: 'Ontology Smart Chain (ONT)',
     },
     {
-        value: 'Tron Smart Chain (TRX)',
+        value: 'TRX',
         label: 'Tron Smart Chain (TRX)',
     },
     {
-        value: 'Near Smart Chain (NEAR)',
+        value: 'NEAR',
         label: 'Near Smart Chain (NEAR)',
     },
     {
-        value: 'Fantom Smart Chain (FTM)',
+        value: 'FTM',
         label: 'Fantom Smart Chain (FTM)',
     },
     {
-        value: 'Kucoin Smart Chain (KCC)',
+        value: 'KCC',
         label: 'Kucoin Smart Chain (KCC)',
     },
     {
-        value: 'Draken Smart Chain (DRK)',
+        value: 'DRK',
         label: 'Draken Smart Chain (DRK)',
     },
     {
-        value: 'Arbitrum Smart Chain (ARB)',
+        value: 'ARB',
         label: 'Arbitrum Smart Chain (ARB)',
     },
 ];
