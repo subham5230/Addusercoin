@@ -119,7 +119,7 @@ export default function Form() {
         })
 
         setState({
-            owner: "619b7caffc337e241d2ceea0",
+            owner: "619e4b0b3716fb3f46ef0770",
             name: "",
             price: "",
             marketCap: "",
@@ -170,7 +170,7 @@ export default function Form() {
     return (
         <div className="App p-5" style= {{maxWidth: "100vw"}}>
             <h1 className="display-4 mb-3">CRYPTO COIN DATA FORM</h1>
-            <h5 className="mb-5"><strong>Please carefully fill all the required (<span style={{color: "red"}}>*</span>) fields, you are most welcome if you can fill other fields as well :)</strong></h5>
+            <h5 className="mb-5"><strong>Please carefully fill all the required (<span style={{color: "red"}}>*</span>) fields, you are most welcome to fill other fields as well :)</strong></h5>
            
             <form className="row" onSubmit={handleFormSubmit}>
             
