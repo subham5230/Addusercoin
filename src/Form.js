@@ -102,8 +102,21 @@ export default function Form() {
         axios.post("https://coinstronaut-admin.herokuapp.com/create-coin", {
             coin: state
         }).then(
-          (res) => console.log(res)
-        )
+          (res) => {
+              if(res.status === 200){
+                  alert("Coin Added! Thank You for Contributing :)")
+              }
+          }
+        ).catch((err)=>{
+
+            if(err.response.status === 400){
+                alert("This Coin already exists! Please add another Coin.")
+            }
+            else{
+                alert("Something is wrong, Please contact the Dev.")
+            }
+
+        })
 
         setState({
             owner: "619b7caffc337e241d2ceea0",
@@ -156,7 +169,8 @@ export default function Form() {
 
     return (
         <div className="App p-5" style= {{maxWidth: "100vw"}}>
-            <h1 className="display-4">TOKEN BASIC INFORMATION</h1>
+            <h1 className="display-4 mb-3">CRYPTO COIN DATA FORM</h1>
+            <h5 className="mb-5"><strong>Please carefully fill all the required (<span style={{color: "red"}}>*</span>) fields, you are most welcome if you can fill other fields as well :)</strong></h5>
            
             <form className="row" onSubmit={handleFormSubmit}>
             
