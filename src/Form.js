@@ -194,7 +194,7 @@ export default function Form() {
                     type="text"
                     id="price"
                     name="price"
-                    placeholder="Price"
+                    placeholder="Price (input price without adding currency)"
                     class="form-control"
                     value={state.price}
                     onChange={dispatcher("price")}
@@ -233,7 +233,7 @@ export default function Form() {
 
             
             <div className="col-lg-4 mb-4">
-                <label for="launchDate">Launch Date<span style={{color: "red"}}> *</span></label>
+                <label for="launchDate">Launch Date<span style={{color: "red"}}> *</span> (Please select atleast once)</label>
                 <DatePicker
                         id="launchDate"
                         selected={startDate}
