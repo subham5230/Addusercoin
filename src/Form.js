@@ -98,6 +98,10 @@ export default function Form() {
         endTimestamp: "",
         whitelistURL: "",
         presaleBuyURL: "",
+        oneHourChangePercent: 0,
+        oneDayChangePercent: 0,
+        status: 'NOT LISTED',
+        votes: 0,
     });
     // const [currency, setCurrency] = React.useState('EUR');
 
@@ -155,6 +159,10 @@ export default function Form() {
             endTimestamp: "",
             whitelistURL: "",
             presaleBuyURL: "",
+            oneHourChangePercent: 0,
+            oneDayChangePercent: 0,
+            status: 'NOT LISTED',
+            votes: 0,
         })
     };
 
