@@ -468,7 +468,7 @@ export default function Form() {
             </div>
 
             <div class="form-group col-lg-4 mb-4">
-                <label for="telegramURL">Telegram URL<span style={{color: "red"}}> *</span></label>
+                <label for="telegramURL">Telegram URL</label>
                 <input
                     type="text"
                     id="telegramURL"
