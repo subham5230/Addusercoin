@@ -7,6 +7,10 @@ import axios from 'axios';
 
 const currencies = [
     {
+        value: 'NONE',
+        label: 'Not Applicable'
+    },
+    {
         value: 'BSC',
         label: 'Binance Smart Chain (BSC)',
     },
