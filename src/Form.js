@@ -477,7 +477,6 @@ export default function Form() {
                     class="form-control"
                     value={state.telegramId}
                     onChange={dispatcher("telegramId")}
-                    required
                 />
             </div>
 
