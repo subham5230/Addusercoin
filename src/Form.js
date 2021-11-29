@@ -249,10 +249,14 @@ export default function Form() {
                 <DatePicker
                         id="launchDate"
                         selected={startDate}
-                        onChange={(date) => setStartDate(date)}
                         timeInputLabel="Time:"
                         dateFormat="MM/dd/yyyy h:mm aa"
-                        onSelect={date => setState({ ...state, launchDate: date})}
+                        onChange={date => {
+                            setStartDate(date);
+                            setState({ ...state, launchDate: date})}}
+                        onSelect={date => {
+                            setStartDate(date);
+                            setState({ ...state, launchDate: date})}}
                         showTimeInput
                     />
             </div>
